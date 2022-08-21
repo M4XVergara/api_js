@@ -1,10 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: rgb(224, 207, 241);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2.5em 0;
+  text-align: center;
+}
+
 .contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .contenedor__cursos {
-    
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  width: 100%;
+  padding: 2.5rem 0;
+}
+
+.tarjeta {
+  max-width: 15rem;
+  text-align: center;
+  border-radius: 10%;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 1px 1px 2px 2px rgb(48, 47, 47);
+}
+
+.tarjeta:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+.tarjeta__imagen {
+  max-height: 230px;
+  position: relative;
+}
+
+.tarjeta__imagen-background {
+  max-width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position:  center;
+  background-repeat: no-repeat;
+}
+
+.tarjeta__imagen-icono {
+  position: absolute;
+  width: 150px;
+  z-index: 10;
+  top: calc(50% - 75px);
+  left: calc(50% - 75px);
 }
